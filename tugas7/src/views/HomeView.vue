@@ -1,12 +1,15 @@
 <script setup>
 import ProductCard from '../components/ProductCard.vue'
 import { useCartStore } from '../stores/cart'
+import laptopImage from '../assets/laptop.jpeg'
+import handphoneImage from '../assets/handphone.jpeg'
+import smartwatchImage from '../assets/smartwatch.jpeg'
 
 const cart = useCartStore()
 const products = [
-  { id: 1, name: 'Laptop Pro', description: 'Laptop cepat untuk produktivitas.', price: 12500000, icon: '??' },
-  { id: 2, name: 'Headphone Wireless', description: 'Suara jernih tanpa kabel.', price: 850000, icon: '??' },
-  { id: 3, name: 'Smartwatch Active', description: 'Pantau aktivitas harian Anda.', price: 1750000, icon: '?' }
+  { id: 1, name: 'Laptop Pro', description: 'Laptop cepat untuk produktivitas.', price: 12500000, image: laptopImage },
+  { id: 2, name: 'Handphone Wireless', description: 'Handphone modern dengan performa cepat.', price: 850000, image: handphoneImage },
+  { id: 3, name: 'Smartwatch Active', description: 'Pantau aktivitas harian Anda.', price: 1750000, image: smartwatchImage }
 ]
 </script>
 

@@ -5,7 +5,7 @@ const emit = defineEmits(['buy'])
 
 <template>
   <article class="product-card">
-    <div class="product-icon">{{ product.icon }}</div>
+    <img class="product-image" :src="product.image" :alt="product.name" />
     <h3>{{ product.name }}</h3>
     <p>{{ product.description }}</p>
     <strong>Rp {{ product.price.toLocaleString('id-ID') }}</strong>
