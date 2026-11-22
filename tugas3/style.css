@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root { --ink: #18251e; --muted: #68746c; --cream: #f8f7f2; --lime: #d8f36a; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); color: var(--ink); font-family: 'DM Sans', sans-serif; }
+.site-header { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: auto; padding: 28px 32px; }
+.brand { color: var(--ink); font: 700 1.25rem 'Space Grotesk', sans-serif; text-decoration: none; letter-spacing: -.04em; }
+.brand span { color: #78a51b; }
+.nav { display: flex; align-items: center; gap: 30px; }
+.nav a { color: var(--muted); font-size: .9rem; text-decoration: none; }
+.nav a:hover { color: var(--ink); }
+.nav-button, .primary-button { background: var(--ink); color: white !important; border-radius: 999px; padding: 11px 19px; }
+main { max-width: 1180px; margin: auto; padding: 35px 32px 90px; }
+.hero { display: flex; align-items: center; justify-content: space-between; min-height: 390px; gap: 40px; }
+.hero-content { max-width: 670px; }
+.eyebrow, .card-label { color: #759622; font-size: .7rem; font-weight: 700; letter-spacing: .16em; }
+h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; letter-spacing: -.06em; }
+h1 { font-size: clamp(2.8rem, 6vw, 5.4rem); line-height: .98; margin: 18px 0; }
+h1 em { color: #789e24; font-style: normal; }
+.hero-text { color: var(--muted); line-height: 1.7; max-width: 470px; }
+.primary-button { display: inline-block; margin-top: 20px; font-weight: 700; text-decoration: none; }
+.primary-button span { margin-left: 13px; font-size: 1.1rem; }
+.hero-badge { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 190px; height: 190px; border-radius: 50%; background: var(--lime); transform: rotate(10deg); }
+.hero-badge span { font-size: 2.2rem; }.hero-badge small { font-size: .68rem; font-weight: 700; line-height: 1.35; text-align: center; }
+.collection { padding-top: 40px; }.section-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 24px; }.section-heading h2 { font-size: 2.2rem; margin: 10px 0 0; }.section-heading > p { color: var(--muted); font-size: .85rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { min-height: 275px; border-radius: 18px; padding: 25px; display: flex; flex-direction: column; transition: transform .2s ease, box-shadow .2s ease; }.card:hover { transform: translateY(-5px); box-shadow: 0 14px 30px #18251e1c; }.card-icon { font-size: 2.1rem; margin-bottom: 14px; }.card-label { color: #4c5d45; margin: 0; }.card h3 { font-size: 1.45rem; margin: 12px 0 8px; }.card > p:not(.card-label) { color: #425047; font-size: .88rem; line-height: 1.55; margin: 0; }.card a { color: var(--ink); font-size: .78rem; font-weight: 700; margin-top: auto; padding-top: 20px; text-decoration: none; }
+.card-green { background: #c9edbd; }.card-yellow { background: #f5e89d; }.card-blue { background: #c5e6ed; }.card-pink { background: #f2c9ce; }.card-orange { background: #f4c28f; }.card-purple { background: #d9c9ef; }
+footer { display: flex; justify-content: space-between; gap: 20px; padding: 24px max(32px, calc((100% - 1116px) / 2)); border-top: 1px solid #dfe2d9; color: var(--muted); font-size: .78rem; }
+@media (max-width: 768px) { .site-header { padding: 22px 20px; }.nav { gap: 15px; }.nav a:not(.nav-button) { display: none; } main { padding: 20px 20px 60px; }.hero { min-height: 450px; }.hero-badge { width: 145px; height: 145px; flex-shrink: 0; }.section-heading h2 { font-size: 1.8rem; } footer { padding: 22px 20px; flex-direction: column; } }
+@media (max-width: 480px) { .site-header { padding: 18px 16px; }.nav-button { padding: 9px 14px; } main { padding: 12px 16px 50px; }.hero { align-items: flex-start; flex-direction: column; gap: 20px; min-height: auto; padding: 45px 0 70px; }.hero-badge { align-self: flex-end; width: 120px; height: 120px; }.hero-badge span { font-size: 1.5rem; }.hero-badge small { font-size: .55rem; } h1 { font-size: 3rem; }.section-heading { align-items: flex-start; flex-direction: column; gap: 4px; }.card-grid { grid-template-columns: 1fr; } }
