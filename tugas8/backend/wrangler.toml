@@ -1,0 +1,6 @@
+name = "inventaris-laboratorium"
+main = "src/index.ts"
+compatibility_date = "2026-11-24"
+
+[vars]
+ENVIRONMENT = "development"

@@ -1,0 +1,20 @@
+### Daftar semua inventaris
+GET http://localhost:8787/api/inventaris
+
+### Detail inventaris berdasarkan ID
+GET http://localhost:8787/api/inventaris/1
+
+### ID tidak ditemukan
+GET http://localhost:8787/api/inventaris/999
+
+### Tambah inventaris baru
+POST http://localhost:8787/api/inventaris
+Content-Type: application/json
+
+{
+  "nama": "Komputer Laboratorium 21",
+  "kategori": "komputer",
+  "jumlah": 1,
+  "kondisi": "Baik",
+  "lokasi": "Lab Komputer"
+}
